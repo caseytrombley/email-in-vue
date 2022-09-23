@@ -5,14 +5,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import EmailForm from "@/components/EmailForm";
 
 export default {
   name: 'App',
   components: {
     EmailForm,
-    HelloWorld
   }
 }
 </script>
