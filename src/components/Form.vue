@@ -72,7 +72,7 @@ export default {
           }),
           axiosConfig,
       );
-      this.resetForm();
+      //this.resetForm();
     },
   },
 };
