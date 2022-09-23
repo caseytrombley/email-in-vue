@@ -14,14 +14,17 @@
       <v-text-field
           v-model="form.name"
           label="Your Name"
+          name="name"
       />
       <v-text-field
           v-model="form.email"
           label="Email"
+          name="email"
       />
       <v-textarea
           v-model="form.message"
           label="Message"
+          name="message"
       />
     </two-button-modal>
   </form>
@@ -68,7 +71,7 @@ export default {
           }),
           axiosConfig,
       );
-      //this.resetForm();
+      this.resetForm();
     },
   },
 };
