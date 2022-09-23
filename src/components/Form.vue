@@ -4,7 +4,6 @@
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      @submit.prevent="handleSubmit"
   >
     <input
         type="hidden"
@@ -14,6 +13,7 @@
     <two-button-modal
         title="Send a message"
         @cancel="$emit('cancel')"
+        @click="handleSubmit"
     >
       <v-text-field
           v-model="form.name"
